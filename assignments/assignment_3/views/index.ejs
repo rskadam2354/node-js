@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body style="display:flex; text-align: center;">
+    <div>
+        <table border="1" width="600">
+            <thead>
+                <th>name</th>
+                <th>email</th>
+            </thead>
+            <tbody>
+                <% users.forEach( user=> { %>
+                    <tr>
+                        <td><%= user.name%></td>
+                        <td><%= user.email%></td>
+                    </tr>
+                   <%})%>
+            </tbody>
+        </table>
+        <button style="margin: 1em;"><a href="form">Add User</a></button>
+    </div>
+</body>
+</html>
